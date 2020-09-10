@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT SourceList (Source)+>
+
+<!ELEMENT Source (FitPars)+>
+<!ATTLIST Source Name CDATA (#REQUIRED)>
+
+<!ELEMENT FitPars (Amp, Mean, Sigma, LeapFrac, MatchMean)>
+<!ATTLIST FitPars Function CDATA (#REQUIRED)>
+<!ATTLIST FitPars CalibHeight CDATA (#REQUIRED)>
+
+
+<!ELEMENT Amp>
+<!ATTLIST Amp value CDATA (#REQUIRED)>
+
+<!ELEMENT Mean>
+<!ATTLIST Mean value PCDATA (#REQUIRED)>
+
+<!ELEMENT Sigma>
+<!ATTLIST Sigma value PCDATA (#REQUIRED)>
+
+<!ELEMENT LeapFrac>
+<!ATTLIST LeapFrac value PCDATA (#REQUIRED)>
+
+<!ELEMENT MatchMean>
+<!ATTLIST MatchMean value PCDATA (#REQUIRED)>
